@@ -1,0 +1,49 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+
+main {
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .logo {
+    display: inline-block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  h1 {
+    font-family: "MyFont";
+    color: $grey;
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+
+  .links {
+    margin-top: 10px;
+    min-height: 50px;
+    a {
+      font-size: 18px;
+      display: inline-block;
+      margin: 0 5px;
+      padding: 3px;
+      height: 24px;
+      width: 24px;
+      background-color: $grey;
+      color: white;
+      border-radius: 50%;
+      line-height: 24px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}
